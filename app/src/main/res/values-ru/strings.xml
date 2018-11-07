@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Тинькофф Конвертер</string>
+
+    <string name="value">Сумма:</string>
+    <string name="one">1</string>
+    <string name="from">Из:</string>
+    <string name="to">В:</string>
+    <string name="result">Результат:</string>
+    <string name="convert">Перевести</string>
+    <string name="copyright">Куркин Николай для Тинькофф Финтех Школы</string>
+
+    <string-array name="currency">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>RUB</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>BTC</item>
+    </string-array>
+
+</resources>

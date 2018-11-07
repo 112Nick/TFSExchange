@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/valueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/value"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/valueField"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/valueText"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/one"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueField"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/from"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fromText"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/toText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/fromText"
+        android:layout_alignParentEnd="true"
+        android:text="@string/to"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fromText"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/valueText"
+        android:layout_alignParentEnd="true"
+        android:text="@string/result"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/resultValue"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/valueField"
+        android:layout_alignParentEnd="true"
+        android:inputType="none"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="@string/convert"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/valueField"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/attentionIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/valueText"
+        android:layout_alignTop="@+id/convertBtn"
+        android:background="@drawable/ic_report_problem_black_24dp" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="@string/copyright"
+        android:textAlignment="center"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

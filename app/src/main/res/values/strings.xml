@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tinkoff Exchange</string>
+
+    <string name="value">Value:</string>
+    <string name="one">1</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="result">Result:</string>
+    <string name="convert">Convert</string>
+    <string name="copyright">By Kurkin Nickolay for Tinkoff Fintech School</string>
+
+    <string-array name="currency">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>RUB</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>BTC</item>
+    </string-array>
+
+
+</resources>
